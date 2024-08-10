@@ -1,5 +1,5 @@
 /*
-Guia_0201.v
+Guia_0201
 Aluno: Mariana Almeida Mendonça
 Matrícula: 863593
 */

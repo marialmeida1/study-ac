@@ -1,0 +1,95 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x5e59c58244d0 .scope module, "Guia_0201" "Guia_0201" 2 7;
+ .timescale 0 0;
+v0x5e59c57ff350_0 .var "b", 4 0;
+v0x5e59c57ff7b0_0 .var "br", 1 0;
+v0x5e59c57ffba0_0 .var/i "cont", 31 0;
+v0x5e59c584c400_0 .var/real "power2", 0 0;
+v0x5e59c584c4c0_0 .var/real "x", 0 0;
+v0x5e59c584c5d0_0 .var/real "xr", 0 0;
+v0x5e59c584c690_0 .var/real "xt", 0 0;
+S_0x5e59c57fdd90 .scope begin, "main" "main" 2 20, 2 20 0, S_0x5e59c58244d0;
+ .timescale 0 0;
+    .scope S_0x5e59c58244d0;
+T_0 ;
+    %pushi/real 0, 4065; load=0.00000
+    %store/real v0x5e59c584c5d0_0;
+    %pushi/real 0, 4065; load=0.00000
+    %store/real v0x5e59c584c4c0_0;
+    %pushi/real 0, 4065; load=0.00000
+    %store/real v0x5e59c584c690_0;
+    %pushi/real 1073741824, 4066; load=1.00000
+    %store/real v0x5e59c584c400_0;
+    %pushi/vec4 4, 0, 32;
+    %store/vec4 v0x5e59c57ffba0_0, 0, 32;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0x5e59c57ff7b0_0, 0, 2;
+    %pushi/vec4 29, 0, 5;
+    %store/vec4 v0x5e59c57ff350_0, 0, 5;
+    %end;
+    .thread T_0;
+    .scope S_0x5e59c58244d0;
+T_1 ;
+    %fork t_1, S_0x5e59c57fdd90;
+    %jmp t_0;
+    .scope S_0x5e59c57fdd90;
+t_1 ;
+    %vpi_call 2 22 "$display", "====================" {0 0 0};
+    %vpi_call 2 23 "$display", "Guia_0201 - Questao D" {0 0 0};
+    %vpi_call 2 24 "$display", "====================" {0 0 0};
+    %vpi_call 2 26 "$display", "Decimal = %f", v0x5e59c584c4c0_0 {0 0 0};
+    %vpi_call 2 27 "$display", "Binario = 0.%5b", v0x5e59c57ff350_0 {0 0 0};
+T_1.0 ;
+    %load/vec4 v0x5e59c57ffba0_0;
+    %cmpi/s 0, 0, 32;
+    %flag_inv 5; GE is !LT
+    %jmp/0xz T_1.1, 5;
+    %load/real v0x5e59c584c400_0;
+    %pushi/real 1073741824, 4067; load=2.00000
+    %div/wr;
+    %store/real v0x5e59c584c400_0;
+    %load/vec4 v0x5e59c57ff350_0;
+    %load/vec4 v0x5e59c57ffba0_0;
+    %part/s 1;
+    %pad/u 32;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_1.2, 4;
+    %load/real v0x5e59c584c4c0_0;
+    %load/real v0x5e59c584c400_0;
+    %add/wr;
+    %store/real v0x5e59c584c4c0_0;
+T_1.2 ;
+    %load/vec4 v0x5e59c57ffba0_0;
+    %subi 1, 0, 32;
+    %store/vec4 v0x5e59c57ffba0_0, 0, 32;
+    %jmp T_1.0;
+T_1.1 ;
+    %load/vec4 v0x5e59c57ff7b0_0;
+    %cvt/rv;
+    %store/real v0x5e59c584c5d0_0;
+    %load/real v0x5e59c584c5d0_0;
+    %load/real v0x5e59c584c4c0_0;
+    %add/wr;
+    %store/real v0x5e59c584c690_0;
+    %vpi_call 2 43 "$display", "====================" {0 0 0};
+    %vpi_call 2 44 "$display", "Decimal fracionaria = %f", v0x5e59c584c4c0_0 {0 0 0};
+    %vpi_call 2 45 "$display", "Decimal real = %f", v0x5e59c584c5d0_0 {0 0 0};
+    %vpi_call 2 46 "$display", "Decimal total = %f", v0x5e59c584c690_0 {0 0 0};
+    %end;
+    .scope S_0x5e59c58244d0;
+t_0 %join;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Guia_0201D.v";

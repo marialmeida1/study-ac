@@ -10,15 +10,15 @@ module Guia_0201;
     real x = 0 ; // decimal
     real power2 = 1.0; // potencia de 2
     integer
-   cont = 4 ; // contador
-    reg [4:0] b = 5'b00011; // binário | parte fracionada (Big Endian)
+    cont = 4 ; // contador
+    reg [4:0] b = 5'b10101; // binário | parte fracionada (Big Endian)
 
 // actions
     initial
         begin : main
 
             $display ( "====================" );
-            $display ( "Guia_0201 - Questao A" );
+            $display ( "Guia_0201 - Questao C" );
             $display ( "====================" );
 
             $display ( "Decimal = %f" , x );
