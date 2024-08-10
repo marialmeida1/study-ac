@@ -12,15 +12,15 @@ module Guia_0201;
     real xt = 0;
     real power2 = 1.0; // potencia de 2
     integer cont = 4 ; // contador
-    reg [1:0] br = 2'b01;
-    reg [4:0] b = 5'b11101; // binário | parte fracionada (Big Endian)
+    reg [1:0] br = 2'b11;
+    reg [4:0] b = 5'b11001; // binário | parte fracionada (Big Endian)
 
 // actions
     initial
         begin : main
 
             $display ( "====================" );
-            $display ( "Guia_0201 - Questao D" );
+            $display ( "Guia_0201 - Questao E" );
             $display ( "====================" );
 
             $display ( "Decimal Inteiro = %f" , xr );
@@ -50,6 +50,6 @@ module Guia_0201;
 endmodule // Guia_0201
 
 /*
-Binário: 1,11101 
-Decimal: 1,90625
+Binário: 11,11001 
+Decimal: 3,78125
 */

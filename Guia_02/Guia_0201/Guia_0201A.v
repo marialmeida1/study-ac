@@ -38,3 +38,9 @@ module Guia_0201;
                 $display ( "Decimal = %f", x );
         end // main
 endmodule // Guia_0201
+
+
+/*
+Binário: 0,00011
+Decimal: 0,09375
+*/
