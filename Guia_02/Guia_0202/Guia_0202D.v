@@ -49,3 +49,8 @@ module Guia_0202;
         end // main
 
 endmodule // Guia_0202
+
+/*
+Decimal: 5,03125
+Binário: 101,00001
+*/
