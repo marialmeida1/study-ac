@@ -46,6 +46,7 @@ e.) 11,11001 =
 1 -> 1 * 2^-5 = 1 * 1/32 = 0,03125 == 3,78125
 
 
+
 02.) Manualmente
 
 a.) 0,375000 =
@@ -103,3 +104,57 @@ Parte Decimal:
            |_ 0,5 * 2 = 1,0
 
 Binario: 110,11
+
+
+
+3.) Manualmente
+
+a.) 0,011110 = 
+Parte Inteira:
+0(2) = 0(4)
+
+Parte Decimal:
+01 = 1
+11 = 3
+10 = 2
+
+Quaternário: 0,132
+
+b.) 0,10100100 = 
+Parte Inteira:
+0(2) = 0(8)
+
+Parte Decimal:
+101 = 5
+001 = 1
+
+Octal: 0,51
+
+c.) 0,10011000 = 
+Parte Inteira:
+0(2) = 0(16)
+
+Parte Decimal:
+1001 = 9
+1000 = 8
+
+Hexa: 0,92
+
+d.) 1,111011
+Parte Inteira:
+01(2) = 01(8)
+
+Parte Decimal:
+111 = 7
+011 = 3
+
+Octal: 01,73
+
+e.) 1101,1001 =
+Parte Inteira:
+1101 = d
+
+Parte Decimal:
+1001 = 9
+
+Hexa: d,9
