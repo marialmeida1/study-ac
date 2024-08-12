@@ -158,3 +158,103 @@ Parte Decimal:
 1001 = 9
 
 Hexa: d,9
+
+
+
+4.) 
+
+a.) 0,321 =
+Parte Inteira:
+0(4) = 00(2)
+
+Parte Decimal:
+3 = 11
+2 = 10
+1 = 01
+
+Binario = 00.111001
+
+b.) 0,3D2 =
+Parte Inteira:
+0(16) = 0000(2)
+
+Parte Decimal:
+3 = 0011
+D = 1101
+2 = 0010
+
+Binario = 0000.001111010010
+00 = 0
+00 = 0
+====
+00 = 0
+11 = 3
+11 = 3
+01 = 1
+00 = 0
+10 = 2
+Quaternário = 0.033102
+
+c.) 0,751 =
+Parte Inteira:
+0(8) = 000(2)
+
+Parte Decimal:
+7 = 111
+5 = 101
+1 = 001
+
+Binario = 000.111101001
+
+d.) 7,345
+
+1º Binario:
+Parte Inteira:
+7(8) = 111(2)
+
+Parte Decimal:
+3 = 011
+4 = 100
+5 = 101
+
+Binario: 111.0111001010
+
+01 = 1
+11 = 3
+=======
+01 = 1
+11 = 3
+00 = 0
+10 = 2
+10 = 2
+
+Quaternário: 13.13022
+
+e.) F,A5E
+
+1º Binario:
+Parte Inteira:
+F(16) = 1111(2)
+
+Parte Decimal:
+A = 1010
+5 = 0101
+E = 1110
+
+Binario: 1111.101001011110
+
+11 = 3
+11 = 3
+======
+10 = 2
+10 = 2
+01 = 1
+01 = 1
+11 = 3
+10 = 2
+
+Quaternário: 33.221132
+
+
+
+
