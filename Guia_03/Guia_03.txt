@@ -1,0 +1,58 @@
+Guia_03
+Aluno: Mariana Almeida Mendonça
+Matrícula: 863593
+
+1.)
+
+a.) C1,6 (1010(2))
+Tamanho:
+001010
+
+Complemento C1:
+110101
+
+b.) C1,8 (1101(2))
+Tamanho:
+00001101
+
+Complemento C1:
+11110010
+
+c.) C2,6 (101001(2))
+Tamanho:
+101001
+
+Complemento C1:
+010110
+
+Complemento C2:
+010110
+    +1
+_______
+010111
+
+d.) C2,7 (101111(2))
+Tamanho:
+0101111
+
+Complemento C1:
+1010000
+
+Complemento C2:
+1010000
+     +1
+________
+1010001
+
+e.) C2,8 (110100(2))
+Tamanho:
+00110100
+
+Complemento C1:
+11001011
+
+Complemento C2:
+11001011
+      +1
+________
+11001100
