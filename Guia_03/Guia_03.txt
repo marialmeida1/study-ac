@@ -56,3 +56,70 @@ Complemento C2:
       +1
 ________
 11001100
+
+
+
+2.) 
+
+a.) 321 = 
+3 = 11
+2 = 10
+1 = 01
+
+Binario: 111001
+
+Complemento C1:
+000110
+
+b.) B2 = 
+B = 1011
+2 = 0010
+
+Binario: 10110010
+
+Complemento C1:
+01001101
+
+c.) 231 = 
+2 = 10
+3 = 11
+1 = 01
+
+Binario: 101101
+
+Complemento C1:
+010010
+
+Complemento C2:
+010011
+
+d.) 146 = 
+1 = 001
+4 = 100
+6 = 110
+
+Binario: 001100110
+
+Complemento C1:
+110011001
+
+Complemento C2:
+110011001
+       +1
+_________
+110011010
+
+e.) 6F = 
+6 = 0110
+F = 1111
+
+Binario: 01101111
+
+Complemento C1:
+10010000
+
+Complemento C2:
+10010000
+      +1
+________
+10010001
