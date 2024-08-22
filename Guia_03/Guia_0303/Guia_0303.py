@@ -2,7 +2,7 @@ def complemento_de_1(num):
 
    
     negacao = num ^ 0b11111111;
-
+    
     
     return negacao
 
