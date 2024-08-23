@@ -104,3 +104,59 @@ e.) ( y + x' ) . ( y' + x )'
    ( y . x' ) + ( x' . y ) = x' . y
    x' . y
 
+
+3.) 
+
+a.)
+ ∑m | x y z | minterms
+ 1  | 0 0 1 | x' . y' . z
+ 5  | 1 0 1 | x  . y' . z
+ 6  | 1 1 0 | x  . y  . z'
+ 7  | 1 1 1 | x  . y  . z
+
+f (x,y,z) = (x' . y' . z) + ( x  . y' . z) + (x  . y  . z') + (x  . y  . z)
+
+b.)
+ ∑m | x y z | minterms
+ 2  | 0 1 0 | x' . y  . z'
+ 5  | 1 0 1 | x  . y' . z
+ 6  | 1 1 0 | x  . y  . z'
+ 7  | 1 1 1 | x  . y  . z
+
+f (x,y,z) = (x' . y  . z') + ( x  . y' . z) + (x  . y  . z') + (x  . y  . z)
+
+c.)
+ ∑m | x y z w | minterms
+ 1  | 0 0 0 1 | x' . y' . z' . w
+ 2  | 0 0 1 0 | x' . y' . z  . w'
+ 3  | 0 0 1 1 | x' . y' . z  . w
+ 6  | 0 1 0 0 | x' . y  . z' . w'
+ 7  | 0 1 1 1 | x' . y  . z  . w
+ 11 | 1 0 1 1 | x  . y' . z  . w
+ 15 | 1 1 1 1 | x  . y  . z  . w
+
+f(x, y, z, w) = (x' . y' . z' . w) + (x' . y' . z . w') + (x' . y' . z . w) + (x' . y . z' . w') + (x' . y . z . w) + (x . y' . z . w) + (x . y . z . w)
+
+d.) 
+ ∑m | x y z w | minterms
+ 1  | 0 0 0 1 | x' . y' . z' . w
+ 2  | 0 0 1 0 | x' . y' . z  . w'
+ 6  | 0 1 0 0 | x' . y  . z' . w'
+ 8  | 1 0 0 0 | x  . y' . z' . w'
+ 10 | 1 0 1 0 | x  . y' . z  . w'
+ 12 | 1 1 0 0 | x  . y  . z' . w'
+ 14 | 1 1 1 0 | x  . y  . z  . w'
+
+ f(x, y, z, w) = (x' . y' . z' . w) + (x' . y' . z  . w') + (x' . y  . z' . w') + 
+                  (x' . y . z . w') + (x' . y . z . w) + (x . y . z . w)
+
+e) 
+ ∑m | x y z w | minterms
+ 0  | 0 0 0 0 | x' . y' . z' . w'
+ 2  | 0 0 1 0 | x' . y' . z  . w'
+ 5  | 0 1 0 1 | x' . y .  z' . w
+ 7  | 0 1 1 1 | x' . y  . z  . w
+ 8  | 1 0 0 0 | x  . y' . z' . w'
+ 11 | 1 0 1 1 | x  . y' . z  . w
+
+ f(x, y, z, w) = (x' . y' . z' . w) + (x' . y' . z  . w') + (x' . y' . z  . w) + (x' . y  . z  . w') + (x' . y  . z  . w) + (x  . y  . z  . w)
