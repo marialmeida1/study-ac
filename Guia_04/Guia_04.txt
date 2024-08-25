@@ -148,7 +148,7 @@ d.)
  14 | 1 1 1 0 | x  . y  . z  . w'
 
  f(x, y, z, w) = (x' . y' . z' . w) + (x' . y' . z  . w') + (x' . y  . z' . w') + 
-                  (x' . y . z . w') + (x' . y . z . w) + (x . y . z . w)
+                  (x  . y' . z' . w') + (x  . y' . z  . w') + (x  . y  . z' . w') + (x  . y  . z  . w')
 
 e) 
  ∑m | x y z w | minterms
@@ -159,4 +159,69 @@ e)
  8  | 1 0 0 0 | x  . y' . z' . w'
  11 | 1 0 1 1 | x  . y' . z  . w
 
- f(x, y, z, w) = (x' . y' . z' . w) + (x' . y' . z  . w') + (x' . y' . z  . w) + (x' . y  . z  . w') + (x' . y  . z  . w) + (x  . y  . z  . w)
+ f(x, y, z, w) = (x' . y' . z' . w') +
+                 (x' . y' . z  . w') +
+                 (x' . y' . z' . w) + 
+                 (x' . y  . z  . w) + 
+                 (x  . y' . z' . w') + 
+                 (x  . y' . z  . w)
+
+
+4.) 
+
+a.)
+πm | x y z | maxterms
+1  | 0 0 1 | x + y + z'
+2  | 0 1 0 | x + y' + z
+6  | 1 1 0 | x' + y' + z
+7  | 1 1 1 | x' + y' + z'
+
+f(x,y,z) = (x + y + z') . (x + y' + z) . (x' + y' + z) . (x' + y' + z')
+
+
+b.) 
+πm | x y z | maxterms
+0  | 0 0 0 | x + y + z
+3  | 0 1 1 | x + y' + z'
+4  | 1 0 0 | x' + y + z
+7  | 1 1 1 | x' + y' + z'
+
+f(x,y,z)= (x + y + z) . (x + y' + z') . (x' + y + z) . (x' + y' + z')
+
+
+c.)
+πm | x y w z | maxterms
+0  | 0 0 0 0 | x + y + w + z
+1  | 0 0 0 1 | x + y + w + z'
+2  | 0 0 1 0 | x + y + w' + z
+4  | 0 1 0 0 | x + y' + w + z
+6  | 0 1 1 0 | x + y' + w' + z
+8  | 1 0 0 0 | x' + y + w + z
+11 | 1 0 1 1 | x' + y + w' + z'
+12 | 1 1 0 0 | x' + y' + w + z
+
+f(x,y,z,w)= (x + y + w + z) . (x + y + w + z') . (x + y + w' + z) . (x + y' + w + z) . (x + y' + w' + z) . (x' + y + w + z) . (x' + y + w' + z') . (x' + y' + w + z)
+
+d.)
+πm | x y w z | maxterms
+1  | 0 0 0 1 | x + y + w + z'
+2  | 0 0 1 0 | x + y + w' + z
+4  | 0 1 0 0 | x + y' + w + z
+7  | 0 1 1 1 | x + y' + w' + z'
+8  | 1 0 0 0 | x' + y + w + z
+9  | 1 0 0 1 | x' + y + w + z'
+15 | 1 1 1 1 | x' + y' + w' + z'
+
+f(x,y,z,w)= (x + y + w + z') . (x + y + w' + z) . (x + y' + w + z) . (x + y' + w' + z') . (x' + y + w + z) . (x' + y + w + z') . (x' + y' + w' + z')
+
+e.)
+πm | x y w z | maxterms
+0  | 0 0 0 0 | x + y + w + z
+1  | 0 0 0 1 | x + y + w + z'
+2  | 0 0 1 0 | x + y + w' + z
+4  | 0 1 0 0 | x + y' + w + z
+5  | 0 1 0 1 | x + y' + w + z'
+10 | 1 0 1 0 | x' + y + w' + z
+13 | 1 1 0 1 | x' + y' + w + z'
+
+f(x,y,z,w)= (x + y + w + z). (x + y + w + z'). (x + y + w' + z). (x + y' + w + z). (x + y' + w + z'). (x' + y + w' + z). (x' + y' + w + z')
