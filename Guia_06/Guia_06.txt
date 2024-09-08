@@ -1,0 +1,377 @@
+Guia_03
+Aluno: Mariana Almeida Mendonça
+Matrícula: 863593
+
+1)
+
+a) 
+
+x|yz  00   01   11   10
+ 0          1
+ 1               1    1
+
+gpA: 7 e 6
+gpB: 1
+
+gpA: xy
+gpB: x'y'z
+expressão: xy + x'y'z
+
+b)
+
+x|yz  00   01   11   10
+ 0                    1
+ 1     1              1
+
+gpA: 1 e 6
+gpB: 4
+
+gpA: yz
+gpB: xy'z'
+expressão: yz+xy'z'
+
+
+c) 
+
+x|yz  00   01   11   10
+ 0          1         1
+ 1          1         1
+
+gpA: 1 e 5
+gpB: 2 e 6
+
+gpA: y'z
+gpB: yz'
+expressão: y'z + yz'
+
+
+d)
+
+x|yz  00   01   11   10
+ 0          1    1    1
+ 1     1    1    
+
+gpA: 1 e 5
+gpB: 4 e 5
+gpC: 2
+
+gpA: y'z
+gpB: xy'
+gpC: x'yz'
+expressão: y'z + xy' + x'yz'
+
+e)
+
+x|yz  00   01   11   10
+ 0     1    1
+ 1                1   1
+
+gpA: 3 e 7
+gpB: 7 e 6
+gpC: 0
+
+gpA: yz
+gpB: xy
+gpC: x'y'z'
+expressão: yz + xy + x'y'z'
+
+
+2)
+
+a)
+
+x|yz  00   01   11   10
+ 0          0
+ 1          0    0  
+
+gpA: 1 e 5
+gpB: 5 e 7
+
+gpA: yz'
+gpB: x'z'
+expressão: y+z' . x'+z'
+
+b)
+
+x|yz  00   01   11   10
+ 0     0    
+ 1     0              0  
+
+gpA: 0 e 4
+gpB: 4 e 6
+
+gpA: yz
+gpB: x'z
+expressão: y+z . x'+z
+
+c)
+
+x|yz  00   01   11   10
+ 0          0    0    0
+ 1          0      
+
+gpA: 1 e 5
+gpB: 1 e 3
+gpC: 3 e 2
+
+gpA: yz'
+gpB: xz'
+gpC: xy'
+expressão: y+z' . x+z' . x+y'
+
+d) 
+
+x|yz  00   01   11   10
+ 0     0         0
+ 1     0         0    
+
+gpA: 0 e 4
+gpB: 3 e 7
+
+gpA: yz
+gpB: y'z'
+expressão: y+z . y'+z'
+
+e)
+
+x|yz  00   01   11   10
+ 0               0    0
+ 1               0    0
+
+gpA: 3 e 2
+gpB: 7 e 6
+gpC: 3 e 7
+gpD: 2 e 6
+
+gpA: xy'
+gpB: x'y'
+gpC: y'z'
+gpD: y'z
+expressão: x+y' . x'+y' . y'+z' . y'+z
+
+
+3)
+
+a)
+xy
+wz    00   01   11   10
+00          1         1
+01          1
+11     1    1
+10     1
+
+gpA: 1 e 5
+gpB: 5 e 13
+gpC: 12 e 13
+gpD: 12 e 8
+gpE: 2
+
+gpA: x'w'z'
+gpB: w'z
+gpC: xyw'
+gpD: w'z'xy
+gpE: x'y'wz
+expressão: x'w'z' + w'z + xyw' + w'z'xy + x'y'wz
+
+b)
+xy
+wz    00   01   11   10
+00     1    1   1    
+01          1   1
+11          1   1
+10     
+
+gpA: 0 e 1
+gpB: 1 e 3
+gpC: 5 e 7
+gpD: 1 e 5
+gpE: 3 e 7
+gpF: 5 e 13
+gpH: 7 e 15
+gpI: 13 e 15
+
+gpA: x'y'w'
+gpB: x'y'z
+gpC: x'yz
+gpD: w'zx'
+gpE: wzx'
+gpF: w'zy
+gpH: wzy
+gpI: xyz
+expressão: x'y'w' + x'y'z + x'yz + w'zx' + wzx' + w'zy + wzy + xyz
+
+c)  
+
+xy
+wz    00   01   11   10
+00     1    1   1    
+01          1   1
+11          1   1
+10     
+
+gpA: 0 e 1
+gpB: 1 e 3
+gpC: 5 e 7
+gpD: 1 e 5
+gpE: 3 e 7
+gpF: 5 e 13
+gpH: 7 e 15
+gpI: 13 e 15
+
+gpA: x'y'w'
+gpB: x'y'z
+gpC: x'yz
+gpD: w'zx'
+gpE: wzx'
+gpF: w'zy
+gpH: wzy
+gpI: xyz
+expressão: x'y'w' + x'y'z + x'yz + w'zx' + wzx' + w'zy + wzy + xyz
+
+d)
+
+xy
+wz    00   01   11   10
+00     1    1         1   
+01               1    1
+11               1    1
+10                    1
+
+gpA: 0 e 1
+gpB: 7 e 6
+gpC: 2 e 6
+gpD: 15 e 14
+gpE: 7 e 15
+gpF: 6 e 14
+gpG: 14 e 10
+gpH: 2 e 10
+gpI: 2 e 0
+
+gpA: x'y'w'
+gpB: x'yw
+gpC: wz'x'
+gpD: xyw
+gpE: wzy
+gpF: wz'y
+gpG: wz'x
+gpH: wz'y'
+gpI: x'y'z'
+expressão: x'y'w' + x'yw + wz'x' + xyw + wzy + wz'y' + wz'x
+
+e) 
+
+xy
+wz    00   01   11   10
+00     1    1    1      
+01               1    
+11          1   
+10     1    1    1
+
+gpA: 0 e 1
+gpB: 1 e 3
+gpC: 3 e 7
+gpD: 8 e 9
+gpE: 13 e 9
+gpF: 1 e 9
+gpG: 9 e 11
+gpH: 11 e 3
+gpI: 0 e 8
+
+gpA: x'y'w'
+gpB: x'y'z
+gpC: wzx'
+gpD: wy'w'
+gpE: w'zx
+gpF: w'zy'
+gpG: xy'z
+gpH: wzy'
+gpI: w'zy'
+expressão: x'y'w' + x'y'z + wzx' + wy'w' + w'zx + w'zy' + xy'z + wzy' + w'zy'
+
+
+4)
+
+
+a)
+
+xy
+wz    00   01   11   10
+00     0    1    1      
+01     1              
+11          1    
+10     1    1    0
+
+gpA: 2 e 6
+gpB: 6 e 7
+gpC: 14 e 7
+gpD: 14 e 2
+
+gpA: x'y'w'
+gpB: x'y'z
+gpC: wzx'
+gpD: w'zy'
+expressão: x'y'w' + x'y'z + wzx' + w'zy'
+
+b)
+
+xy
+wz    00   01   11   10
+00     1    1    0      
+01     1    0
+11     0    0    0
+10     1    1
+
+gpA: 4 e 7
+gpB: 7 e 8
+gpC: 8 e 13
+gpD: 13 e 15
+
+gpA: x'yz'
+gpB: x'yz
+gpC: xy'z'
+gpD: xy'z
+expressão: x'yz' + x'yz + xy'z' + xy'z
+
+
+c)
+
+xy
+wz    00   01   11   10
+00     0    1    1      
+01     0    1
+11     1    1    1
+10     0    1
+
+gpA: 1 e 5
+gpB: 5 e 9
+gpC: 9 e 11
+gpD: 11 e 14
+gpE: 14 e 15
+
+gpA: x'y'wz'
+gpB: x'yw'z
+gpC: x'wyz
+gpD: xy'wz'
+gpE: xyw'z
+expressão: x'y'wz' + x'yw'z + x'wyz + xy'wz' + xyw'z
+
+
+d)
+
+xy
+wz    00   01   11   10
+00     1    1    1      
+01     1    0    1    
+11     1    0    0
+10     0    1    1
+
+gpA: 2 e 6
+gpB: 5 e 7
+gpC: 11 e 15
+gpD: 13 e 15
+
+gpA: x'yw'z
+gpB: x'ywz'
+gpC: x'yz
+gpD: xy'z'
+expressão: x'yw'z + x'ywz' + x'yz + xy'z'
