@@ -1,0 +1,63 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x641f64bd94e0 .scope module, "test_f7_nor" "test_f7_nor" 2 17;
+ .timescale 0 0;
+v0x641f64bee340_0 .net "s", 0 0, L_0x641f64bee680;  1 drivers
+v0x641f64bee3e0_0 .var "x", 0 0;
+v0x641f64bee4b0_0 .var "y", 0 0;
+S_0x641f64bd9670 .scope module, "moduloNOR" "f7_nor" 2 22, 2 1 0, S_0x641f64bd94e0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s";
+    .port_info 1 /INPUT 1 "a";
+    .port_info 2 /INPUT 1 "b";
+L_0x641f64bc55c0 .functor NOR 1, v0x641f64bee3e0_0, v0x641f64bee3e0_0, C4<0>, C4<0>;
+L_0x641f64bc5630 .functor NOR 1, v0x641f64bee4b0_0, v0x641f64bee4b0_0, C4<0>, C4<0>;
+L_0x641f64bee680 .functor NOR 1, v0x641f64bee3e0_0, L_0x641f64bc5630, C4<0>, C4<0>;
+v0x641f64bd9850_0 .net "a", 0 0, v0x641f64bee3e0_0;  1 drivers
+v0x641f64bedf90_0 .net "b", 0 0, v0x641f64bee4b0_0;  1 drivers
+v0x641f64bee050_0 .net "not_a", 0 0, L_0x641f64bc55c0;  1 drivers
+v0x641f64bee0f0_0 .net "not_b", 0 0, L_0x641f64bc5630;  1 drivers
+v0x641f64bee1b0_0 .net "s", 0 0, L_0x641f64bee680;  alias, 1 drivers
+    .scope S_0x641f64bd94e0;
+T_0 ;
+    %vpi_call 2 25 "$display", "Guia_0500 - Mariana Almeida Mendon\303\247a - 863593" {0 0 0};
+    %vpi_call 2 26 "$display", "Test ~a & b using only NOR gates" {0 0 0};
+    %vpi_call 2 27 "$display", " x  y | s (resultado esperado)" {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x641f64bee3e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x641f64bee4b0_0, 0, 1;
+    %delay 1, 0;
+    %vpi_call 2 30 "$display", "%2b %2b | %1b (esperado: 0)", v0x641f64bee3e0_0, v0x641f64bee4b0_0, v0x641f64bee340_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x641f64bee3e0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x641f64bee4b0_0, 0, 1;
+    %delay 1, 0;
+    %vpi_call 2 31 "$display", "%2b %2b | %1b (esperado: 1)", v0x641f64bee3e0_0, v0x641f64bee4b0_0, v0x641f64bee340_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x641f64bee3e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x641f64bee4b0_0, 0, 1;
+    %delay 1, 0;
+    %vpi_call 2 32 "$display", "%2b %2b | %1b (esperado: 0)", v0x641f64bee3e0_0, v0x641f64bee4b0_0, v0x641f64bee340_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x641f64bee3e0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x641f64bee4b0_0, 0, 1;
+    %delay 1, 0;
+    %vpi_call 2 33 "$display", "%2b %2b | %1b (esperado: 0)", v0x641f64bee3e0_0, v0x641f64bee4b0_0, v0x641f64bee340_0 {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Guia_0501.v";
