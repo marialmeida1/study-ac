@@ -2,7 +2,7 @@ module fxyz (
     output s,
     input x, y, z
 );
-      assign s = (x & y) | (~x & ~y & z);
+    assign s = (~x & ~y);
 endmodule
 
 module testbench;

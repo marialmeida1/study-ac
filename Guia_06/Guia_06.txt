@@ -375,3 +375,53 @@ gpB: x'ywz'
 gpC: x'yz
 gpD: xy'z'
 expressão: x'yw'z + x'ywz' + x'yz + xy'z'
+
+
+5) 
+
+w8 = x' (inversor de x)
+w9 = y
+w5 = w8 + w9 (porta OR entre w8 e w9)
+w6 = y' (inversor de y)
+w4 = w5 • w6 (porta AND entre w5 e w6)
+w10 = x • z (porta AND entre x e z)
+w11 = z' (inversor de z)
+w7 = w10 + w11 (porta OR entre w10 e w11)
+w1 = w4 (conexão direta)
+w2 = w7 (conexão direta)
+s = w1 + w2 (porta OR final entre w1 e w2)
+
+equação: ((x′ +y)⋅y′ )+((x⋅z)+z′)
+
+x|yz  00   01   11   10
+ 0          1    1
+ 1          1    1
+
+equação simplificada: x'+y'  
+
+
+6)
+
+w8 = x' (inversor de x)
+w9 = y
+w5 = w8 + w9 (OR entre w8 e w9)
+w3 = w5 • z (AND entre w5 e z)
+w6 = y' (inversor de y)
+w4 = w5 • w6 (AND entre w5 e w6)
+w10 = x • w (AND entre x e w)
+w11 = z' (inversor de z)
+w7 = w10 + w11 (OR entre w10 e w11)
+w1 = w4
+w2 = w7
+s = w1 + w2 (OR entre w1 e w2)
+
+equação: ((x′+y)⋅y′)+((x⋅w)+z′)
+
+xy
+wz    00   01   11   10
+00               0      
+01     0    0    0    0
+11     0    0    0    0
+10          0
+
+equação simplificada: (x+y)(y+z)
