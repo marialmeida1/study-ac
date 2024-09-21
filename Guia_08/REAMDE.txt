@@ -2,3 +2,4 @@ Guia_08
 Aluno: Mariana Almeida Mendonça
 Matrícula: 863593
 
+Todos as pastas possuem as resoluções dos exercícios, com o circuito e código verilog

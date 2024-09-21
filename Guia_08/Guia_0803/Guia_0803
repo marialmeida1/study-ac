@@ -1,0 +1,48 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x579c0f9cef70 .scope module, "test_equalityComparator" "test_equalityComparator" 2 16;
+ .timescale 0 0;
+v0x579c0f9e0150_0 .net "eq", 0 0, L_0x579c0f9e03f0;  1 drivers
+v0x579c0f9e0220_0 .var "x", 4 0;
+v0x579c0f9e02f0_0 .var "y", 4 0;
+S_0x579c0f9cf100 .scope module, "EQ" "equalityComparator" 2 24, 2 6 0, S_0x579c0f9cef70;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "eq";
+    .port_info 1 /INPUT 5 "A";
+    .port_info 2 /INPUT 5 "B";
+v0x579c0f9977b0_0 .net "A", 4 0, v0x579c0f9e0220_0;  1 drivers
+v0x579c0f997ba0_0 .net "B", 4 0, v0x579c0f9e02f0_0;  1 drivers
+v0x579c0f9e0030_0 .net "eq", 0 0, L_0x579c0f9e03f0;  alias, 1 drivers
+L_0x579c0f9e03f0 .cmp/eq 5, v0x579c0f9e0220_0, v0x579c0f9e02f0_0;
+    .scope S_0x579c0f9cef70;
+T_0 ;
+    %vpi_call 2 29 "$monitor", "x = %b, y = %b, eq = %b", v0x579c0f9e0220_0, v0x579c0f9e02f0_0, v0x579c0f9e0150_0 {0 0 0};
+    %pushi/vec4 13, 0, 5;
+    %store/vec4 v0x579c0f9e0220_0, 0, 5;
+    %pushi/vec4 13, 0, 5;
+    %store/vec4 v0x579c0f9e02f0_0, 0, 5;
+    %delay 1, 0;
+    %pushi/vec4 13, 0, 5;
+    %store/vec4 v0x579c0f9e0220_0, 0, 5;
+    %pushi/vec4 5, 0, 5;
+    %store/vec4 v0x579c0f9e02f0_0, 0, 5;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 5;
+    %store/vec4 v0x579c0f9e0220_0, 0, 5;
+    %pushi/vec4 0, 0, 5;
+    %store/vec4 v0x579c0f9e02f0_0, 0, 5;
+    %delay 1, 0;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Guia_0803.v";
