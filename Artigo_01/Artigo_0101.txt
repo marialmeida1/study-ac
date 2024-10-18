@@ -1,0 +1,112 @@
+Aluno: Mariana Almeida Mendonça
+Matrícula: 863593
+
+Outro artigo utilizado:
+([S.d.]). Com.br. Recuperado 15 de outubro de 2024, de
+https://repositorio.pgsscogna.com.br/bitstream/123456789/27935/1/JulianadeFreitasSimiaoAtividade3.pdf
+
+3) 
+
+3.1) ASIC:
+
+São circuitos personalizados, ou seja, projetados especificamente para atender às 
+necessidades de um projeto. Sua principal desvantagem é o custo elevado, já que 
+demandam mão de obra especializada para sua construção. Para pequenas e médias 
+indústrias, esse custo pode ser excessivo. Entretanto, em grandes empresas ou 
+produções em larga escala, o investimento se justifica, pois a necessidade é mais 
+significativa. A flexibilidade desses circuitos é baixa, pois são feitos para 
+atender a um único projeto específico. São amplamente utilizados em indústrias 
+de IoT e smartphones.
+
+3.2) ASSP:
+
+Diferencia-se do ASIC por ser mais flexível. Embora seja mais específico, pode ser 
+aplicado em mais de uma solução, sendo parcialmente customizado. Sua flexibilidade 
+não é tão ampla, mas pode atender a projetos similares. É utilizado em indústrias 
+de chips ou áudio.
+
+3.3) SPLD:
+
+Os Dispositivos de Lógica Programáveis Simples (Simple Programmable Logic Devices) 
+têm como principais características o baixo custo e o bom desempenho. Sua estrutura 
+é baseada em portas AND e OR, sendo uma categoria de pequenos PLDs. Permitem que 
+sua lógica seja programada pelo usuário, oferecendo flexibilidade e customização 
+moderadas. São utilizados em aplicações simples, como controle de sinais.
+
+3.4) CPLD:
+
+Mais complexos que os SPLDs, os CPLDs são formados por múltiplos PLDs em um único 
+chip, com blocos que se comunicam por interconexões programáveis. Seus barramentos 
+são contínuos, permitindo maior capacidade lógica e de interconexões. Oferecem alta 
+flexibilidade e têm custo relativamente acessível. São usados em aplicações de 
+controle, decodificadores e sistemas embarcados simples.
+
+3.5) SoC:
+
+É um sistema que integra diversos componentes, como CPU, memória e interfaces, em 
+um único chip. Ele é customizado para agregar várias funcionalidades, mas sua 
+flexibilidade é baixa, pois é projetado para um uso específico. Seu custo pode ser 
+alto, especialmente para pequenas e médias demandas, mas o investimento é compensado 
+pela sua eficiência na resolução de problemas. É amplamente utilizado em dispositivos 
+IoT, smartphones e sistemas embarcados avançados.
+
+3.6) FPGA:
+
+Os FPGAs não utilizam portas AND e OR, mas sim blocos lógicos configuráveis. Sua 
+programação é feita em campo, permitindo reconfiguração. São altamente customizáveis, 
+com grande flexibilidade, já que podem ser alterados após a fabricação. O custo 
+inicial é baixo, mas pode aumentar devido ao consumo de energia em grandes produções. 
+São amplamente utilizados em protótipos, sistemas de teste, atualizações de hardware 
+e em aplicações de média e baixa produção.
+
+
+4.)
+
+PROM: foi o primeiro tipo de CHIP programável pelo usuário, sendo programada uma 
+única vez. Seu estado padrão é sempre 1, isso sendo alterado posteriormente. Muito
+utilizada em situações em que as informações não precisam ser modificadas, como 
+em sistemas embarcados ou dados fixos.
+
+PLA: primeiro dispositvo a ser produzido para implementar funções lógicas definidas, 
+sua constituição é feita por meio de arranjos AND e OR, onde ambos são programáveis.
+Entretando apresenta alto custo.
+
+PAL: também constituído de arranjos AND e OR, sendo o primeiro programável e o 
+segundo fixo, foi um dispositivo no qual barateou a fabricação de dispositivos de
+lógica programável  
+
+Definição:
+    PROM: programa apenas uma vez
+    PLA: programável com arrays configuráveis
+    PAL: arquitetura fixa para simplificação
+Flexibilidade: 
+    PROM: não reprogramável
+    PLA: total programável
+    PAL: parcialmente programável
+Aplicação:
+    PROM: dados fixos
+    PLA: circuitos personalizados
+    PAL: circuitos que necessitam de simplicidade e velocidade
+Custo:
+    PROM: parcialmente barateou
+    PLA: custo elevado
+    PAL: custo menos elevado (mais barato que o PLA)
+Velocidade:
+    PROM: como armazena dados não envolve execuções
+    PLA: mais lento que o PAL
+    PAL: mais veloz devido sua arquitetura
+
+5.) 
+
+Blocos lógicos:
+    CPLD: quantidade pequena de grandes blocos lógicos
+    FPGA: quantidade grande de pequenos blocos lógicos
+Volatilidade: 
+    CPLD: não volátil
+    FPGA: volátil
+Velocidade:
+    CPLD: resposta mais rápida
+    FPGA: resposta mais lenta
+Escalabilidade:
+    CPLD: restritos a pequenos e médios projetos
+    FPGA: abrange projetos de grande escala
