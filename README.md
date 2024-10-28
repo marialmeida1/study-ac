@@ -8,6 +8,7 @@ Este repositório contém todas as atividades desenvolvidas na disciplina de Arq
   - **Guia_0x/Guia_0x.txt**: Um arquivo .txt localizado na raiz de cada guia, onde estão documentadas todas as resoluções das atividades daquele guia.
   - **Guia_0x0x/**: Diretório para cada atividade específica dentro da guia, onde `0x0x` representa o número da guia e o número da atividade (por exemplo, `Guia_0101` para a primeira atividade da primeira guia).
     - **Arquivos .v**: Códigos em Verilog, utilizados para a resolução das atividades principais.
+    - **Arquivos .circ**: Arquivos de circuitos que devem ser rodados via Logisim.
     - **Outras Linguagens**: Algumas atividades extras são resolvidas em linguagens como Java e Python, disponíveis nas respectivas pastas.
 
 ## Linguagens Utilizadas
