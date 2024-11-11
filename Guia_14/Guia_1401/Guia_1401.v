@@ -3,7 +3,7 @@ Aluno: Mariana Almeida Mendonça
 Matrícula: 863593
 */
 
-module shift_register_6bit ( // Módulo do registrador de deslocamento
+module shift_register_6bit (
     input clk,
     input rst,      
     input ld,       
@@ -24,7 +24,6 @@ module shift_register_6bit ( // Módulo do registrador de deslocamento
     end
 endmodule
 
-// Módulo de teste
 module test_shift_register_6bit;
     reg clk;
     reg rst;

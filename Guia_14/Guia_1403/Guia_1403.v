@@ -3,11 +3,11 @@ Aluno: Mariana Almeida Mendonça
 Matrícula: 863593
 */
 
-module shift_register_6bit (
+module ring_shift_register_6bit (
     input clk,
     input rst,          
     input ld,           
-    input [5:0] in,     
+    input in,          
     output reg [5:0] q  
 );
 
@@ -16,22 +16,22 @@ module shift_register_6bit (
             q <= 6'b0; 
         end
         else if (ld) begin
-            q <= in;  
+            q <= {5'b0, in}; 
         end
         else begin
-            q <= {q[4:0], 1'b0}; 
+            q <= {q[0], q[5:1]}; 
         end
     end
 endmodule
 
-module test_shift_register_6bit;
+module test_ring_shift_register_6bit;
     reg clk;
     reg rst;
     reg ld;
-    reg [5:0] in;
+    reg in;
     wire [5:0] q;
 
-    shift_register_6bit uut (
+    ring_shift_register_6bit uut (
         .clk(clk),
         .rst(rst),
         .ld(ld),
@@ -49,21 +49,27 @@ module test_shift_register_6bit;
         
         rst = 1;
         ld = 0;
-        in = 6'b0;
+        in = 0;
 
         #10 rst = 0;
 
-        #10 ld = 1; in = 6'b101010;
+        #10 ld = 1; in = 1;
         #10 ld = 0;
 
         #10;
         #10;
         #10;
         #10;
+        #10;
+        #10;
 
-        #10 ld = 1; in = 6'b110011;
+        #10 ld = 1; in = 1;
         #10 ld = 0;
 
+        #10;
+        #10;
+        #10;
+        #10;
         #10;
         #10;
 
