@@ -11,10 +11,11 @@ Este repositório contém todas as atividades desenvolvidas na disciplina de Arq
     - **Arquivos .circ**: Arquivos de circuitos que devem ser rodados via Logisim.
     - **Outras Linguagens**: Algumas atividades extras são resolvidas em linguagens como Java e Python, disponíveis nas respectivas pastas.
 
-## Linguagens Utilizadas
+## Linguagens e Ferramentas utilizadas
 
 - **Verilog (.v)**: Atividades obrigatórias.
 - **Java & Python**: Utilizados para exercícios extras e complementares.
+- **Logisim**: Circuitos criados para as atividades.
 
 ## Como Usar
 
